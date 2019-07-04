@@ -88,6 +88,9 @@ can be found in the section below.
 ![Auto suggestions](http://i66.tinypic.com/b5i9dv.png)
 
 Just follow these steps: https://github.com/tarruda/zsh-autosuggestions#oh-my-zsh
+```
+brew install zsh-autosuggestions
+```
 
 If the auto suggestions do not appear to show, it could be a problem with your color scheme. Under "iTerm → Preferences → Colors tab", check the value of Black Bright, that is the color your auto suggestions will have. It will be displayed on top of the Background color. If there is not enough contrast between the two, you won't see the suggestions even if they're actually there..
 
