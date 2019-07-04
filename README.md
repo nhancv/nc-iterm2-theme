@@ -90,6 +90,10 @@ can be found in the section below.
 Just follow these steps: https://github.com/tarruda/zsh-autosuggestions#oh-my-zsh
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+> Activate the plugin in ~/.zshrc:
+plugins=( [plugins...] zsh-autosuggestions)
+
 ```
 
 If the auto suggestions do not appear to show, it could be a problem with your color scheme. Under "iTerm → Preferences → Colors tab", check the value of Black Bright, that is the color your auto suggestions will have. It will be displayed on top of the Background color. If there is not enough contrast between the two, you won't see the suggestions even if they're actually there..
@@ -113,16 +117,13 @@ DEFAULT_USER="nhancao"
 ## Syntax highlighting
 
 ```
-brew install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+> Activate the plugin in ~/.zshrc:
+plugins=( [plugins...] zsh-syntax-highlighting)
 ```
 
 If you do not have or do not like homebrew, follow [the installation instructions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) instead.
-
-After installation through homebrew, add
-
-```
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-```
 
 to **the end** of your `.zshrc` file. After that, it's best to restart your terminal. Sourcing your `~/.zshrc` does not seem to work well with this plugin.
 
